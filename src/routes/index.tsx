@@ -18,9 +18,10 @@ import genderReveal from "../assets/gender-reveal.png.asset.json";
 import vintageCake from "../assets/vintage-cake.png.asset.json";
 import celebrationDesserts from "../assets/celebration-desserts.png.asset.json";
 
-const WHATSAPP_NUMBER = "971501234567";
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Moonday%20Sweets!%20I'm%20interested%20in%20ordering%20a%20custom%20cake.`;
+const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=971547468300";
 const ORDER_MENU_LINK = "https://order.chatfood.io/moonday-sweets/menu?channel=instagram";
+const INSTAGRAM_LINK = "https://www.instagram.com/moonday.ae/";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -398,14 +399,15 @@ function Index() {
                 WhatsApp
               </a>
               <a
-                href="https://instagram.com"
+                href={INSTAGRAM_LINK}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
               >
                 <Instagram className="h-4 w-4 text-rose-gold" />
-                @moonday.sweets
+                @moonday.ae
               </a>
+
             </div>
           </div>
           <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
