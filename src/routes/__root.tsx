@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Moonday Sweets | Premium Custom Cakes & Sweets in UAE" },
+      { name: "description", content: "Handcrafted custom cakes, mini cakes, and celebration sweets made with love in the UAE." },
+      { name: "author", content: "Moonday Sweets" },
+      { property: "og:title", content: "Moonday Sweets | Premium Custom Cakes & Sweets in UAE" },
+      { property: "og:description", content: "Handcrafted custom cakes, mini cakes, and celebration sweets made with love in the UAE." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@moonday.sweets" },
     ],
     links: [
       {
