@@ -347,15 +347,6 @@ function Index() {
                 <MessageCircle className="h-6 w-6" />
                 Order / Customize via WhatsApp
               </a>
-              <a
-                href={ORDER_MENU_LINK}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-white/80 px-8 py-4 text-lg font-semibold text-foreground backdrop-blur-sm transition-all hover:-translate-y-1 hover:bg-white hover:shadow-md"
-              >
-                <Cake className="h-5 w-5" />
-                Browse Full Menu
-              </a>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
               Based in the UAE • Delivery & pickup available • Custom orders welcome
