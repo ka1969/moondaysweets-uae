@@ -366,10 +366,15 @@ function Index() {
               </span>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
-              <span className="inline-flex items-center gap-1.5">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Moonday+cakes+%26+Sweets,+Al+Jerf+2+-+Ajman"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
+              >
                 <MapPin className="h-4 w-4 text-rose-gold" />
-                UAE
-              </span>
+                Visit Us
+              </a>
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
