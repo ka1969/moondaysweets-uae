@@ -19,7 +19,6 @@ import vintageCake from "../assets/vintage-cake.png.asset.json";
 import celebrationDesserts from "../assets/celebration-desserts.png.asset.json";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=971547468300";
-const ORDER_MENU_LINK = "https://order.chatfood.io/moonday-sweets/menu?channel=instagram";
 const INSTAGRAM_LINK = "https://www.instagram.com/moonday.ae/";
 
 
