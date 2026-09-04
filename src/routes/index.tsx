@@ -132,15 +132,6 @@ function Index() {
                   <MessageCircle className="h-5 w-5" />
                   Order / Customize via WhatsApp
                 </a>
-                <a
-                  href={ORDER_MENU_LINK}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-white/80 px-7 py-3.5 text-base font-semibold text-foreground backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-md"
-                >
-                  View Full Menu
-                  <ArrowRight className="h-4 w-4" />
-                </a>
               </div>
               <div className="mt-8 flex items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex -space-x-2">
