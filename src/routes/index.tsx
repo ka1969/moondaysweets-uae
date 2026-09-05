@@ -370,7 +370,7 @@ function Index() {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Moonday+cakes+%26+Sweets,+Al+Jerf+2+-+Ajman"
+                href={MAPS_LINK}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
