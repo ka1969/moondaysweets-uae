@@ -20,7 +20,7 @@ import celebrationDesserts from "../assets/celebration-desserts.png.asset.json";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=971547468300";
 const INSTAGRAM_LINK = "https://www.instagram.com/moonday.ae/";
-const MAPS_LINK = "https://google.com";
+const MAPS_LINK = "https://maps.app.goo.gl/9fyiXZerr8cwK7Fd7?g_st=com.google.maps.preview.copy";
 
 
 
