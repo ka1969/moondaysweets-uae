@@ -20,7 +20,7 @@ import celebrationDesserts from "../assets/celebration-desserts.png.asset.json";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=971547468300";
 const INSTAGRAM_LINK = "https://www.instagram.com/moonday.ae/";
-const MAPS_LINK = "https://maps.app.goo.gl/oeEdx21jFRLJopDN9";
+const MAPS_LINK = "https://google.com";
 
 
 
@@ -238,11 +238,12 @@ function Index() {
             </div>
 
             <div className="grid gap-8 lg:grid-cols-2">
-              <OccasionCard
+            <OccasionCard
                 image={genderReveal.url}
                 title="Gender Reveal Sweets"
                 description="Pink-or-blue drip cakes, macarons, cupcakes, and cake pops that make the big reveal even sweeter."
                 cta="Plan a Gender Reveal"
+                whatsappText="Hi! I'd like to plan a gender reveal sweets order."
                 alt="A gender reveal dessert table with a pink and blue drip cake, macarons, cupcakes, and cake pops"
               />
               <OccasionCard
@@ -250,6 +251,7 @@ function Index() {
                 title="Vintage Elegance"
                 description="Timeless buttercream ruffles, lace piping, and soft floral details for weddings and anniversaries."
                 cta="Design a Vintage Cake"
+                whatsappText="Hi! I'd like to design a vintage cake."
                 alt="A vintage-style cake with ruffled buttercream, lace piping, and sugar flowers on an antique cake stand"
               />
             </div>
@@ -278,7 +280,7 @@ function Index() {
               />
               <FlavorCard name="Vanilla Bean" note="Classic & creamy" color="bg-cream text-foreground" />
               <FlavorCard name="Lotus Biscoff" note="Caramel crunch" color="bg-baby-blue text-secondary-foreground" />
-              <FlavorCard name="Custom Flavor" note="You decide" color="bg-rose-gold text-white" />
+              <FlavorCard name="Custom Flavor" note="You decide" color="bg-rose-gold text-white" icon="⚙️" />
             </div>
 
             <div className="mt-12 text-center">
