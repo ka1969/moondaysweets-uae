@@ -20,6 +20,9 @@ import celebrationDesserts from "../assets/celebration-desserts.png.asset.json";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=971547468300";
 const INSTAGRAM_LINK = "https://www.instagram.com/moonday.ae/";
+const MAPS_LINK =
+  "https://www.google.com/maps/search/?api=1&query=Cg7p%2Bq9x%20al%20Hamidiya%20-%20Al%20Jerf%202%20-%20Ajman";
+
 
 
 export const Route = createFileRoute("/")({
