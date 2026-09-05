@@ -20,7 +20,7 @@ import celebrationDesserts from "../assets/celebration-desserts.png.asset.json";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=971547468300";
 const INSTAGRAM_LINK = "https://www.instagram.com/moonday.ae/";
-const MAPS_LINK = "https://maps.app.goo.gl/oeEdx21jFRLJopDN9";
+const MAPS_LINK = "https://google.com";
 
 
 
@@ -238,11 +238,12 @@ function Index() {
             </div>
 
             <div className="grid gap-8 lg:grid-cols-2">
-              <OccasionCard
+            <OccasionCard
                 image={genderReveal.url}
                 title="Gender Reveal Sweets"
                 description="Pink-or-blue drip cakes, macarons, cupcakes, and cake pops that make the big reveal even sweeter."
                 cta="Plan a Gender Reveal"
+                whatsappText="Hi! I'd like to plan a gender reveal sweets order."
                 alt="A gender reveal dessert table with a pink and blue drip cake, macarons, cupcakes, and cake pops"
               />
               <OccasionCard
@@ -250,6 +251,7 @@ function Index() {
                 title="Vintage Elegance"
                 description="Timeless buttercream ruffles, lace piping, and soft floral details for weddings and anniversaries."
                 cta="Design a Vintage Cake"
+                whatsappText="Hi! I'd like to design a vintage cake."
                 alt="A vintage-style cake with ruffled buttercream, lace piping, and sugar flowers on an antique cake stand"
               />
             </div>
@@ -278,7 +280,7 @@ function Index() {
               />
               <FlavorCard name="Vanilla Bean" note="Classic & creamy" color="bg-cream text-foreground" />
               <FlavorCard name="Lotus Biscoff" note="Caramel crunch" color="bg-baby-blue text-secondary-foreground" />
-              <FlavorCard name="Custom Flavor" note="You decide" color="bg-rose-gold text-white" />
+              <FlavorCard name="Custom Flavor" note="You decide" color="bg-rose-gold text-white" icon="⚙️" />
             </div>
 
             <div className="mt-12 text-center">
@@ -448,14 +450,17 @@ function OccasionCard({
   title,
   description,
   cta,
+  whatsappText,
   alt,
 }: {
   image: string;
   title: string;
   description: string;
   cta: string;
+  whatsappText: string;
   alt: string;
 }) {
+  const occasionWhatsAppLink = `${WHATSAPP_LINK}&text=${encodeURIComponent(whatsappText)}`;
   return (
     <div className="flex flex-col items-center gap-6 rounded-3xl border border-border bg-white/80 p-6 shadow-sm backdrop-blur-sm transition-all hover:shadow-lg sm:flex-row sm:items-start sm:p-8">
       <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full border-4 border-cream shadow-md">
@@ -465,7 +470,7 @@ function OccasionCard({
         <h3 className="font-[Playfair_Display] text-2xl font-semibold text-foreground">{title}</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
         <a
-          href={WHATSAPP_LINK}
+          href={occasionWhatsAppLink}
           target="_blank"
           rel="noreferrer"
           className="mt-5 inline-flex items-center gap-2 rounded-full bg-soft-pink px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:bg-rose-gold hover:shadow-md"
@@ -482,15 +487,17 @@ function FlavorCard({
   name,
   note,
   color,
+  icon,
 }: {
   name: string;
   note: string;
   color: string;
+  icon?: string;
 }) {
   return (
     <div className="flex items-center gap-4 rounded-2xl border border-border bg-white/70 p-4 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
       <span className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full text-sm font-bold shadow-sm ${color}`}>
-        {name.charAt(0)}
+        {icon ?? name.charAt(0)}
       </span>
       <div>
         <h4 className="font-semibold text-foreground">{name}</h4>
