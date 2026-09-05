@@ -20,8 +20,7 @@ import celebrationDesserts from "../assets/celebration-desserts.png.asset.json";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=971547468300";
 const INSTAGRAM_LINK = "https://www.instagram.com/moonday.ae/";
-const MAPS_LINK =
-  "https://www.google.com/maps/place/Moonday+cakes+%26+Sweets+**+Home/@25.4044143,55.4972214,17z/data=!4m16!1m9!4m8!1m6!1m2!1s0x3ef5f7b37405f5f1:0x9a0ef45694094fac!2sMoonday+cakes+%26+Sweets+*2A*2A+Home,+Cg7p%2Bq9x,+al+Hamidiya+-+Al+Jerf+2+-+Ajman!2m2!1d55.5021028!2d25.4044354!1m0!3m5!1s0x3ef5f7b37405f5f1:0x9a0ef45694094fac!8m2!3d25.4044095!4d55.5020923!16s%2Fg%2F11kj8wx0bg?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D";
+const MAPS_LINK = "https://maps.app.goo.gl/oeEdx21jFRLJopDN9";
 
 
 
